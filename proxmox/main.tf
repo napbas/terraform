@@ -16,14 +16,3 @@ provider "proxmox" {
  pm_password  = "ec54ad81-14b0-4444-922a-5726a1c2975d"
  pm_tls_insecure = true
 }
-
-
-
-#resource "proxmox_vm_qemu" "my_vm" {
-# name       = "my-vm"
-# target_node = "pve"
-# clone      = "ubuntu-template"
-# storage    = "local-lvm"
-# cores      = 2
-# memory     = 2048
-#}
